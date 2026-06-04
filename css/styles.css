@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #021273;
+    color: white;
+
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin-right: 1.2em;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    color: white;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.me{
+    display: flex;
+    margin: 100px auto;
+    align-items: center;
+    border-radius: 50px;
+    background-color: rgba(0, 108, 151, 0.555);
+    border-radius: 80px;
+    padding: 20px;
+}
+
+.me img{
+    width: 50%;
+    height: 24%;
+    border-radius: 50px;
+}
+
+.home-buttons{
+    font-size: 30px;
+}
+.fa-github{
+    color: black;
+}
+.fa-linkedin{
+    color: darkblue;
+}
+
+.cv-button{
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.text1-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.text1-container h2{
+    font-size: 40px;
+    
+}
