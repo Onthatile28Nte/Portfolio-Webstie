@@ -20,10 +20,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: #021273;
     color: white;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 ul{
@@ -33,6 +35,7 @@ ul{
 li{
     list-style: none;
     margin-right: 1.2em;
+    transition: 0.2s ease;
 }
 
 a{
@@ -40,6 +43,11 @@ a{
     font-size: 20px;
     color: black;
     color: white;
+}
+
+li:hover{
+    transform: scale(1.1);
+    text-shadow: 0px 0px 3px white;
 }
 
 main{
@@ -76,19 +84,43 @@ main{
 }
 
 .home-buttons{
-    font-size: 30px;
+    display: flex;
+    gap: 20px;
 }
+
 .fa-github{
     color: black;
+    font-size: 30px;
+    transition: 0.2s ease;
 }
+
+.fa-github:hover{
+    transform: scale(1.1);
+}
+
 .fa-linkedin{
     color: darkblue;
+    font-size: 30px;
+    transition: 0.2s ease;
+
+}
+
+.fa-linkedin:hover{
+    transform: scale(1.1);
+
 }
 
 .cv-button{
     padding: 10px;
     border-radius: 10px;
     border-style: none;
+    transition: 0.2s ease;
+}
+
+.cv-button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
 }
 
 .text1-container{
@@ -214,7 +246,7 @@ main{
 }
 
 .projects-container{
-      background-color: var(---background-color);
+    background-color: var(---background-color);
     border-radius: 80px;
     margin: 100px auto;
     padding: 30px;
@@ -228,7 +260,7 @@ main{
 }
 
 footer{
-    background-color: var(---background-color);
+    background-color: #021273;
     padding: 50px;
     color: white;
     text-align: center;
@@ -249,3 +281,40 @@ footer{
     justify-content: space-around;
 }
 
+form{
+    padding: 50px;
+    display: flex;
+    margin: 100px auto;
+    flex-direction: column;
+    background-color: var(--secondary-background);
+    text-align: center;
+    max-width: 900px;
+    border-radius: 80px;
+}
+
+form h3{
+    font-size: var(--font-size);
+}
+
+fieldset{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 40%;
+    margin: 50px auto;
+    border-style: none;
+}
+
+fieldset input{
+    padding: 10px;
+}
+
+form button{
+    width: 20%;
+    padding: 10px;
+    border-style: none;
+    border-radius: 40px;
+    background-color: white;
+    margin: 10px auto;
+}
